@@ -1,0 +1,416 @@
+- description: "Pregunta 1 - let vs const"
+  vars:
+    prompt: |
+      Pregunta #1:
+      ¿Cuál es la diferencia fundamental entre let y const en JavaScript?
+  assert:
+    - type: contains
+      value: reasignación
+    - type: contains
+      value: const
+    - type: javascript
+      value: output.length > 150
+
+- description: "Pregunta 2 - arrow functions"
+  vars:
+    prompt: |
+      
+      Pregunta #2:
+      ¿Qué característica técnica distingue a las arrow functions de las funciones tradicionales?
+  assert:
+    - type: contains
+      value: this
+    - type: contains-any
+      value: [contexto, léxico, binding]
+    - type: javascript
+      value: output.includes("=>") || output.includes("arrow")
+
+- description: "Pregunta 3 - map()"
+  vars:
+    prompt: |
+      
+      Pregunta #3:
+      ¿Cuál es la función principal del método map() en JavaScript?
+  assert:
+    - type: contains
+      value: nuevo array
+    - type: contains
+      value: transformar
+    - type: not-contains
+      value: modifica el array original
+
+- description: "Pregunta 4 - Promesas"
+  vars:
+    prompt: |
+     
+      Pregunta #4:
+      ¿Qué representa una Promesa (Promise) en JavaScript?
+  assert:
+    - type: contains-any
+      value: [asíncrona, asincrónica, asíncrono]
+    - type: contains-any
+      value: [resolve, reject, pending]
+    - type: javascript
+      value: output.length > 100
+
+- description: "Pregunta 5 - async/await"
+  vars:
+    prompt: |
+      
+      Pregunta #5:
+      ¿Cuál es la ventaja principal de usar async/await sobre .then()?
+  assert:
+    - type: contains-any
+      value: [legible, legibilidad, sintaxis]
+    - type: contains
+      value: await
+    - type: javascript
+      value: "!output.toLowerCase().includes('es más rápido')"
+
+- description: "Pregunta 6 - Destructuring"
+  vars:
+    prompt: |
+      
+      Pregunta #6:
+      ¿Qué permite hacer la desestructuración (destructuring) en JavaScript?
+  assert:
+    - type: contains-any
+      value: [extraer, asignar, desempaquetar]
+    - type: javascript
+      value: output.includes("const") || output.includes("let")
+
+- description: "Pregunta 7 - Spread operator"
+  vars:
+    prompt: |
+      
+      Pregunta #7:
+      ¿Cuál es el propósito del operador spread (...) en JavaScript?
+  assert:
+    - type: contains
+      value: "..."
+    - type: contains-any
+      value: [expandir, copiar, combinar]
+    - type: javascript
+      value: output.length > 80
+
+- description: "Pregunta 8 - Closures"
+  vars:
+    prompt: |
+      
+      Pregunta #8:
+      ¿Qué es un closure en JavaScript?
+  assert:
+    - type: contains-any
+      value: [función, scope, ámbito]
+    - type: contains-any
+      value: [variables, acceso, referencia]
+    - type: javascript
+      value: output.length > 120
+
+- description: "Pregunta 9 - Event loop"
+  vars:
+    prompt: |
+      
+      Pregunta #9:
+      ¿Qué es el Event Loop en JavaScript?
+  assert:
+    - type: contains-any
+      value: [asíncrona, asíncrono, asincrónica]
+    - type: contains-any
+      value: [call stack, callback, cola]
+    - type: javascript
+      value: output.length > 100
+
+- description: "Pregunta 10 - Template literals"
+  vars:
+    prompt: |
+      
+      Pregunta #10:
+      ¿Qué ventaja ofrecen los template literals sobre las comillas simples o dobles?
+  assert:
+    - type: contains
+      value: "`"
+    - type: contains-any
+      value: [interpolación, variables, "${"]
+    - type: javascript
+      value: "output.includes('${')"
+
+- description: "Pregunta 11 - Hoisting"
+  vars:
+    prompt: |
+      
+      Pregunta #11:
+      ¿Qué es el hoisting en JavaScript?
+  assert:
+    - type: contains-any
+      value: [declaración, elevación, inicio]
+    - type: contains-any
+      value: [var, función, scope]
+    - type: javascript
+      value: output.length > 100
+
+- description: "Pregunta 12 - Rest parameters"
+  vars:
+    prompt: |
+    
+      Pregunta #12:
+      ¿Para qué sirven los rest parameters (...args) en JavaScript?
+  assert:
+    - type: contains
+      value: "..."
+    - type: contains-any
+      value: [parámetros, argumentos, array]
+    - type: javascript
+      value: output.length > 80
+
+- description: "Pregunta 13 - filter()"
+  vars:
+    prompt: |
+      
+      Pregunta #13:
+      ¿Cuál es la función del método filter() en arrays?
+  assert:
+    - type: contains
+      value: array
+    - type: contains-any
+      value: [condición, filtrar, criterio]
+    - type: not-contains
+      value: modifica el original
+
+- description: "Pregunta 14 - reduce()"
+  vars:
+    prompt: |
+      
+      Pregunta #14:
+      ¿Qué hace el método reduce() en JavaScript?
+  assert:
+    - type: contains-any
+      value: [acumulador, valor único, reducir]
+    - type: contains
+      value: array
+    - type: javascript
+      value: output.length > 100
+
+- description: "Pregunta 15 - Strict mode"
+  vars:
+    prompt: |
+     
+      Pregunta #15:
+      ¿Qué es 'use strict' en JavaScript?
+  assert:
+    - type: contains-any
+      value: [estricto, errores, modo]
+    - type: contains
+      value: use strict
+    - type: javascript
+      value: output.length > 90
+
+- description: "Pregunta 16 - Prototype"
+  vars:
+    prompt: |
+      
+      Pregunta #16:
+      ¿Qué es el prototype en JavaScript?
+  assert:
+    - type: contains-any
+      value: [objeto, herencia, propiedades]
+    - type: contains-any
+      value: [métodos, cadena, prototipo]
+    - type: javascript
+      value: output.length > 120
+
+- description: "Pregunta 17 - call() vs apply()"
+  vars:
+    prompt: |
+      
+      Pregunta #17:
+      ¿Cuál es la diferencia entre call() y apply()?
+  assert:
+    - type: contains
+      value: this
+    - type: contains-any
+      value: [argumentos, array, individualmente]
+    - type: javascript
+      value: output.includes("call") && output.includes("apply")
+
+- description: "Pregunta 18 - bind()"
+  vars:
+    prompt: |
+      
+      Pregunta #18:
+      ¿Para qué sirve el método bind() en JavaScript?
+  assert:
+    - type: contains
+      value: this
+    - type: contains-any
+      value: [contexto, función, enlazar]
+    - type: javascript
+      value: output.length > 90
+
+- description: "Pregunta 19 - Callback functions"
+  vars:
+    prompt: |
+      
+      Pregunta #19:
+      ¿Qué es una función callback en JavaScript?
+  assert:
+    - type: contains-any
+      value: [función, parámetro, argumento]
+    - type: contains-any
+      value: [ejecuta, llama, invoca]
+    - type: javascript
+      value: output.length > 100
+
+- description: "Pregunta 20 - typeof vs instanceof"
+  vars:
+    prompt: |
+      
+      Pregunta #20:
+      ¿Cuál es la diferencia entre typeof e instanceof?
+  assert:
+    - type: contains
+      value: typeof
+    - type: contains
+      value: instanceof
+    - type: contains-any
+      value: [tipo, objeto, constructor]
+
+- description: "Pregunta 21 - NaN"
+  vars:
+    prompt: |
+      
+      Pregunta #21:
+      ¿Qué es NaN en JavaScript y cómo se verifica?
+  assert:
+    - type: contains
+      value: NaN
+    - type: contains-any
+      value: [Number, isNaN, número]
+    - type: javascript
+      value: output.length > 80
+
+- description: "Pregunta 22 - null vs undefined"
+  vars:
+    prompt: |
+     
+      Pregunta #22:
+      ¿Cuál es la diferencia entre null y undefined?
+  assert:
+    - type: contains
+      value: null
+    - type: contains
+      value: undefined
+    - type: contains-any
+      value: [asignado, declarada, valor]
+
+- description: "Pregunta 23 - Set"
+  vars:
+    prompt: |
+      
+      Pregunta #23:
+      ¿Qué es un Set en JavaScript y cuándo usarlo?
+  assert:
+    - type: contains
+      value: Set
+    - type: contains-any
+      value: [únicos, valores, duplicados]
+    - type: javascript
+      value: output.length > 90
+
+- description: "Pregunta 24 - Map"
+  vars:
+    prompt: |
+      
+      Pregunta #24:
+      ¿Qué es un Map en JavaScript y en qué se diferencia de un objeto?
+  assert:
+    - type: contains
+      value: Map
+    - type: contains-any
+      value: [clave, valor, key]
+    - type: javascript
+      value: output.length > 100
+
+- description: "Pregunta 25 - Symbol"
+  vars:
+    prompt: |
+      
+      Pregunta #25:
+      ¿Para qué sirve el tipo Symbol en JavaScript?
+  assert:
+    - type: contains
+      value: Symbol
+    - type: contains-any
+      value: [único, primitivo, identificador]
+    - type: javascript
+      value: output.length > 90
+
+- description: "Pregunta 26 - WeakMap y WeakSet"
+  vars:
+    prompt: |
+      
+      Pregunta #26:
+      ¿Qué diferencia hay entre Map/Set y WeakMap/WeakSet?
+  assert:
+    - type: contains-any
+      value: [WeakMap, WeakSet]
+    - type: contains-any
+      value: [garbage, memoria, recolección]
+    - type: javascript
+      value: output.length > 100
+
+- description: "Pregunta 27 - Proxy"
+  vars:
+    prompt: |
+      
+      Pregunta #27:
+      ¿Qué es un Proxy en JavaScript?
+  assert:
+    - type: contains
+      value: Proxy
+    - type: contains-any
+      value: [objeto, interceptar, operaciones]
+    - type: javascript
+      value: output.length > 100
+
+- description: "Pregunta 28 - Reflect"
+  vars:
+    prompt: |
+      
+      Pregunta #28:
+      ¿Para qué sirve el objeto Reflect en JavaScript?
+  assert:
+    - type: contains
+      value: Reflect
+    - type: contains-any
+      value: [métodos, operaciones, objeto]
+    - type: javascript
+      value: output.length > 90
+
+- description: "Pregunta 29 - Generators"
+  vars:
+    prompt: |
+      
+      Pregunta #29:
+      ¿Qué son las funciones generator en JavaScript?
+  assert:
+    - type: contains-any
+      value: [function*, yield, iterador]
+    - type: contains-any
+      value: [pausar, reanudar, secuencia]
+    - type: javascript
+      value: output.length > 120
+
+- description: "Pregunta 30 - Iteradores"
+  vars:
+    prompt: |
+     
+      Pregunta #30:
+      ¿Qué es un iterador en JavaScript?
+  assert:
+    - type: contains-any
+      value: [next, Symbol.iterator, iterador]
+    - type: contains-any
+      value: [objeto, secuencia, valor]
+    - type: javascript
+      value: output.length > 100
