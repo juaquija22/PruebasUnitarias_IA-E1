@@ -2,7 +2,7 @@
   vars:
     prompt: |
       Pregunta #1:
-      ¿Cuál es la diferencia fundamental entre let y const en JavaScript?
+      ¿Cómo funcionan los métodos básicos de arrays en JavaScript y cuándo debo usar cada uno?
   assert:
     - type: contains
       value: reasignación
