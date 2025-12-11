@@ -16,7 +16,8 @@
     prompt: |
       
       Pregunta #2:
-      ¿Qué característica técnica distingue a las arrow functions de las funciones tradicionales?
+      ¿Cuál es la diferencia entre funciones flecha y funciones tradicionales, y cuándo debo usar cada una?
+      
   assert:
     - type: contains
       value: this
@@ -30,7 +31,7 @@
     prompt: |
       
       Pregunta #3:
-      ¿Cuál es la función principal del método map() en JavaScript?
+      ¿Qué son el scope y el hoisting en JavaScript y cómo afectan el comportamiento de mis variables?
   assert:
     - type: contains
       value: nuevo array
@@ -44,7 +45,7 @@
     prompt: |
      
       Pregunta #4:
-      ¿Qué representa una Promesa (Promise) en JavaScript?
+      ¿Qué son los callbacks en JavaScript y cómo me ayudan a manejar operaciones asíncronas?
   assert:
     - type: contains-any
       value: [asíncrona, asincrónica, asíncrono]
@@ -58,7 +59,7 @@
     prompt: |
       
       Pregunta #5:
-      ¿Cuál es la ventaja principal de usar async/await sobre .then()?
+      ¿¿Cómo puedo seleccionar y manipular elementos del DOM usando JavaScript de forma efectiva?
   assert:
     - type: contains-any
       value: [legible, legibilidad, sintaxis]
@@ -72,7 +73,7 @@
     prompt: |
       
       Pregunta #6:
-      ¿Qué permite hacer la desestructuración (destructuring) en JavaScript?
+      ¿Cómo funcionan los event listeners en JavaScript y cuál es la mejor forma de manejar eventos del usuario?
   assert:
     - type: contains-any
       value: [extraer, asignar, desempaquetar]
@@ -84,7 +85,8 @@
     prompt: |
       
       Pregunta #7:
-      ¿Cuál es el propósito del operador spread (...) en JavaScript?
+      ¿Cómo funcionan los objetos en JavaScript y cómo puedo trabajar con sus propiedades y métodos?
+
   assert:
     - type: contains
       value: "..."
@@ -98,7 +100,7 @@
     prompt: |
       
       Pregunta #8:
-      ¿Qué es un closure en JavaScript?
+      ¿Qué son las Promises y async/await, y cómo simplifican el manejo de código asíncrono en JavaScript?
   assert:
     - type: contains-any
       value: [función, scope, ámbito]
@@ -112,7 +114,7 @@
     prompt: |
       
       Pregunta #9:
-      ¿Qué es el Event Loop en JavaScript?
+      ¿Qué son la destructuración y el operador spread en JavaScript y cómo me ayudan a escribir código más limpio?
   assert:
     - type: contains-any
       value: [asíncrona, asíncrono, asincrónica]
@@ -126,7 +128,7 @@
     prompt: |
       
       Pregunta #10:
-      ¿Qué ventaja ofrecen los template literals sobre las comillas simples o dobles?
+      ¿Cómo funcionan map, filter y reduce en JavaScript y cuándo debo usar cada uno en lugar de bucles tradicionales?
   assert:
     - type: contains
       value: "`"
@@ -140,7 +142,8 @@
     prompt: |
       
       Pregunta #11:
-      ¿Qué es el hoisting en JavaScript?
+      ¿Qué son los closures en JavaScript y para qué casos prácticos son útiles en la programación?
+
   assert:
     - type: contains-any
       value: [declaración, elevación, inicio]
@@ -154,7 +157,7 @@
     prompt: |
     
       Pregunta #12:
-      ¿Para qué sirven los rest parameters (...args) en JavaScript?
+      ¿Cómo funcionan las clases en JavaScript y cómo puedo usar programación orientada a objetos en mis proyectos?
   assert:
     - type: contains
       value: "..."
@@ -168,7 +171,8 @@
     prompt: |
       
       Pregunta #13:
-      ¿Cuál es la función del método filter() en arrays?
+      ¿Qué son los template literals y cuáles son los métodos más útiles para manipular strings en JavaScript?
+
   assert:
     - type: contains
       value: array
@@ -182,7 +186,7 @@
     prompt: |
       
       Pregunta #14:
-      ¿Qué hace el método reduce() en JavaScript?
+      ¿Cómo funciona try-catch en JavaScript y cuál es la forma correcta de manejar errores en mis aplicaciones?
   assert:
     - type: contains-any
       value: [acumulador, valor único, reducir]
@@ -196,7 +200,7 @@
     prompt: |
      
       Pregunta #15:
-      ¿Qué es 'use strict' en JavaScript?
+      ¿Cómo funcionan los módulos ES6 con import y export, y cómo puedo organizar mi código en múltiples archivos?
   assert:
     - type: contains-any
       value: [estricto, errores, modo]
@@ -210,7 +214,8 @@
     prompt: |
       
       Pregunta #16:
-      ¿Qué es el prototype en JavaScript?
+      ¿Cómo funciona "this" en JavaScript y cómo puedo controlar su valor usando bind, call y apply?
+
   assert:
     - type: contains-any
       value: [objeto, herencia, propiedades]
@@ -224,7 +229,7 @@
     prompt: |
       
       Pregunta #17:
-      ¿Cuál es la diferencia entre call() y apply()?
+      ¿Cómo puedo usar localStorage y sessionStorage para guardar datos en el navegador del usuario?
   assert:
     - type: contains
       value: this
@@ -238,7 +243,7 @@
     prompt: |
       
       Pregunta #18:
-      ¿Para qué sirve el método bind() en JavaScript?
+      ¿Cómo funciona la Fetch API para hacer peticiones HTTP y consumir APIs en JavaScript?
   assert:
     - type: contains
       value: this
@@ -247,12 +252,12 @@
     - type: javascript
       value: output.length > 90
 
-- description: "Pregunta 19 - Callback functions"
+- description: "Pregunta 19 "
   vars:
     prompt: |
       
       Pregunta #19:
-      ¿Qué es una función callback en JavaScript?
+      ¿Qué es JSON y cómo puedo convertir entre objetos JavaScript y formato JSON para trabajar con APIs?
   assert:
     - type: contains-any
       value: [función, parámetro, argumento]
@@ -261,12 +266,12 @@
     - type: javascript
       value: output.length > 100
 
-- description: "Pregunta 20 - typeof vs instanceof"
+- description: "Pregunta 20 "
   vars:
     prompt: |
       
       Pregunta #20:
-      ¿Cuál es la diferencia entre typeof e instanceof?
+      ¿Cómo funcionan las expresiones regulares básicas en JavaScript y cómo puedo usarlas para validar datos?
   assert:
     - type: contains
       value: typeof
@@ -275,12 +280,12 @@
     - type: contains-any
       value: [tipo, objeto, constructor]
 
-- description: "Pregunta 21 - NaN"
+- description: "Pregunta 21 "
   vars:
     prompt: |
       
       Pregunta #21:
-      ¿Qué es NaN en JavaScript y cómo se verifica?
+      ¿Cómo funcionan setTimeout y setInterval en JavaScript y cuándo debo usar cada uno para ejecutar código con retrasos?
   assert:
     - type: contains
       value: NaN
@@ -294,7 +299,7 @@
     prompt: |
      
       Pregunta #22:
-      ¿Cuál es la diferencia entre null y undefined?
+      ¿Cómo funcionan los operadores ternarios y la evaluación de cortocircuito para escribir condicionales más concisas?
   assert:
     - type: contains
       value: null
@@ -308,7 +313,7 @@
     prompt: |
       
       Pregunta #23:
-      ¿Qué es un Set en JavaScript y cuándo usarlo?
+      ¿Qué son el event bubbling y event delegation en JavaScript y cómo puedo usarlos para optimizar mis event listeners?
   assert:
     - type: contains
       value: Set
@@ -317,12 +322,12 @@
     - type: javascript
       value: output.length > 90
 
-- description: "Pregunta 24 - Map"
+- description: "Pregunta 24 "
   vars:
     prompt: |
       
       Pregunta #24:
-      ¿Qué es un Map en JavaScript y en qué se diferencia de un objeto?
+      ¿Qué son las funciones de orden superior en JavaScript y cómo puedo usarlas para crear código más flexible?
   assert:
     - type: contains
       value: Map
@@ -336,7 +341,7 @@
     prompt: |
       
       Pregunta #25:
-      ¿Para qué sirve el tipo Symbol en JavaScript?
+      ¿Cómo funcionan el nullish coalescing (??) y optional chaining (?.) para manejar valores nulos de forma segura?
   assert:
     - type: contains
       value: Symbol
@@ -350,7 +355,7 @@
     prompt: |
       
       Pregunta #26:
-      ¿Qué diferencia hay entre Map/Set y WeakMap/WeakSet?
+      ¿Qué son Map y Set en JavaScript y cuándo debo usarlos en lugar de objetos y arrays tradicionales?
   assert:
     - type: contains-any
       value: [WeakMap, WeakSet]
@@ -364,7 +369,7 @@
     prompt: |
       
       Pregunta #27:
-      ¿Qué es un Proxy en JavaScript?
+      ¿Qué son los Symbols en JavaScript y cómo puedo crear propiedades privadas en mis objetos y clases?
   assert:
     - type: contains
       value: Proxy
@@ -378,7 +383,7 @@
     prompt: |
       
       Pregunta #28:
-      ¿Para qué sirve el objeto Reflect en JavaScript?
+      ¿Qué son los generators e iterators en JavaScript y para qué casos prácticos son útiles estas funcionalidades?
   assert:
     - type: contains
       value: Reflect
@@ -386,31 +391,3 @@
       value: [métodos, operaciones, objeto]
     - type: javascript
       value: output.length > 90
-
-- description: "Pregunta 29 - Generators"
-  vars:
-    prompt: |
-      
-      Pregunta #29:
-      ¿Qué son las funciones generator en JavaScript?
-  assert:
-    - type: contains-any
-      value: [function*, yield, iterador]
-    - type: contains-any
-      value: [pausar, reanudar, secuencia]
-    - type: javascript
-      value: output.length > 120
-
-- description: "Pregunta 30 - Iteradores"
-  vars:
-    prompt: |
-     
-      Pregunta #30:
-      ¿Qué es un iterador en JavaScript?
-  assert:
-    - type: contains-any
-      value: [next, Symbol.iterator, iterador]
-    - type: contains-any
-      value: [objeto, secuencia, valor]
-    - type: javascript
-      value: output.length > 100

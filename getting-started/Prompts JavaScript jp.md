@@ -1696,3 +1696,11 @@ function* idGenerator() {
 
 const ids = idGenerator();
 console.log(ids.
+
+---
+
+## **Pregunta #28**
+
+¿Qué son los Symbols en JavaScript y cómo puedo crear propiedades privadas en mis objetos y clases?
+
+---

@@ -2,7 +2,7 @@
 description: 'Getting started'
 
 env:
-  GEMINI_API_KEY: AIzaSyCM_5hW-AXpyGKwyG1xKaq5uGSakOQ6DMw
+  GEMINI_API_KEY: AIzaSyBrqjbGbuPoKiPgOktseFe61eMHWXILceg
 
 providers:
   - "google:gemini-2.5-flash-lite"
